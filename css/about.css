@@ -1,0 +1,19 @@
+.about-vfryer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    margin: 50px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }
