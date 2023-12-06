@@ -22,6 +22,14 @@ html {
 
 body {
     background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* To set the footer to the bottom, body = flex */
+main {
+    flex: 1;
 }
 
 ul {
@@ -166,19 +174,22 @@ header {
     width: 66%;
 }
 
-/* Footer Style */
+/* ------ Beginning of Footer Style ------- */
 footer {
     background-color: var(--primary);
     width: 100%;
-    height: 5.417vw;
+    /* height: 5.417vh; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 footer p {
-    font-size: 0.729vw;
+    font-size: 0.8rem;
+    padding: 2rem 0;
 }
+
+/* ------ Beginning of Footer Style ------- */
 
 .hamburger-menu  {
     display: none;
@@ -286,4 +297,23 @@ footer p {
         position: relative;
         z-index: 999;
     }
+
+    .welcome-message {
+        font-size: 1em;
+    }
+
+    /* footer {
+        position: fixed;
+        bottom: 0;
+        height: 2vh;
+    }
+
+    footer {
+        margin-top: 2vh;
+    }
+
+    footer p {
+        font-size: 0.8em;
+
+    } */
 }
