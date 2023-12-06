@@ -3,11 +3,13 @@ CSD 1103 - Web Development I Project
 Name: Vaishakh Anil Kumar
 C#: C0877469
 */
+@import url('./theme.css');
+
 * {
     padding:0;
     margin:0;
     border:0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--primary-font);
 }
 
 html {
@@ -30,11 +32,11 @@ li {
 
 a {
     text-decoration: none;
-    color: #C6C6C6;
+    color: var(--silver-white);;
 }
 
 h1 {
-    color: #C6C6C6;
+    color: var(--silver-white);;
     text-align: center;
     font-size: 1.042vw;
     margin: 2vh;
@@ -42,7 +44,7 @@ h1 {
 }
 
 p {
-    color: #C6C6C6;
+    color: var(--silver-white);;
     text-align: center;
     font-weight: 100;
     font-size: 1.25vw;
@@ -50,11 +52,12 @@ p {
 
 /* COLOR THEMES */
 .theme-yellow {
-    color: #FF9900;
+    /* color: #FF9900; */
+    color: var(--gold);
 }
 
 .theme-white {
-    color: #C6C6C6;
+    color: var(--silver-white);
 }
 
 /* FONT SIZES */
@@ -76,7 +79,7 @@ p {
 }
 
 .vfry-title {
-    font-family: 'Qwigley', cursive;
+    font-family: var(--logo-font);
 }
 
 .title {
@@ -147,6 +150,10 @@ header {
     align-items: center;
 }
 
+.mobile {
+    display: none;
+}
+
 .company-banner-container {
     margin: 1.667vw 0;
 }
@@ -157,7 +164,7 @@ header {
 
 /* Footer Style */
 footer {
-    background-color: #0E0E0E;
+    background-color: var(--primary);
     width: 100%;
     height: 5.417vw;
     display: flex;
@@ -169,13 +176,110 @@ footer p {
     font-size: 0.729vw;
 }
 
-@media only screen and (max-width: 600px) {
+.hamburger-menu  {
+    display: none;
+}
+
+/* Tablets & Large Phones - From 600px to 769px */
+@media only screen and (min-width: 600px) and (max-width: 769px) {
+    
+}
+
+
+/* Mobile & tablet View Ranging from 0 to (600px) 820px*/
+@media only screen and (max-width: 1200px) {
+
+    /* ----- Beginning of Hamburger Menu ----- */
+    .hamburger-menu {
+        display: block;
+        width: 30px;
+        height: 50px;
+        margin-right: 7.3vw;
+        z-index: 999;
+    }
+
+    .hamburger-menu:hover {
+        cursor: pointer;
+    }
+
+    .hamburger-menu:hover .line-top, 
+    .hamburger-menu:hover .line-bottom {
+        background-color: var(--gold);
+    }
+
+    .hamburger-menu:hover .line-center {
+        background-color: var(--silver-white);
+    } 
+
+    .hamburger-menu .line-top, .hamburger-menu .line-center, .hamburger-menu .line-bottom {
+        width: 100%;
+        height: 2px;
+        margin: 5px 0;
+        border-radius: 20px;
+        border: 1px solid var(--gold);
+        transition: all 0.25s ease-in;
+    }
+
+    .hamburger-menu .line-center {
+        border: 1px solid var(--silver-white);
+        transition-delay: 0.15s;
+    }
+    
+    .hamburger-menu .line-bottom {
+        transition-delay: 0.25s;
+    }
+
+    .close-button div:nth-child(1) {
+        transform: translateY(10px) rotate(45deg) ;
+    }
+
+    .close-button div:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .close-button div:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg) ;
+    }
+
+    /* ----- End of Hamburger Menu ----- */
+    
+
+    /* ------- Beginning of Navigation menu items ----- */
+    .mobile-menu-options {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary);
+        top:0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobile-menu-options li a{
+        font-size: 4vh;
+    }
+
+    .mobile-menu-options li {
+        margin: 1vh 0;
+    }
+    
+    /* ------- End of Navigation menu items ----- */
 
     .mobile {
         display: block;
     }
 
-    .desktop {
+    .desktop-tablet {
         display: none;
+    }
+
+    .company-logo {
+        width: 60%;
+        margin: 1em;
+        position: relative;
+        z-index: 999;
     }
 }

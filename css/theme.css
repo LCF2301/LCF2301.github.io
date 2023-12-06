@@ -1,0 +1,10 @@
+:root {
+    /* THEMES - COLOR */
+    --primary: #0E0E0E;
+    --gold: #FF9900;
+    --silver-white: #C6C6C6;
+
+    /* THEMES - FONT */
+    --primary-font: 'Poppins', sans-serif;
+    --logo-font: 'Qwigley', cursive;
+}
