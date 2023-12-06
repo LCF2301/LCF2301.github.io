@@ -17,9 +17,10 @@
 }
 
 .customer-image {
-    width: 100%;
+    width: 300px;
     height: 300px;
     margin: 20px;
+    border-radius: 50%;
 }
 
 .customer-card {
@@ -34,7 +35,7 @@
 }
 
 .customer-image {
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .gallery-container {
