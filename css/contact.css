@@ -70,6 +70,10 @@ label {
     font-size: 1.25rem;
 }
 
+select:hover {
+    cursor: pointer;
+}
+
 .model-container,
 .user-info-container,
 .color-container,
@@ -78,17 +82,19 @@ label {
     margin-bottom: 40px;
 }
 
-.model-selection-container {
+.model-selection-container,
+.customer-name,
+.customer-contact
+{
     display: flex;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
-.material-container, .interface-container {
-    display: flex;
-    flex-direction: column;
-}
 
-.model-selection-container div select{
+.model-selection-container div select,
+.customer-name div input,
+.customer-contact div input
+{
     /* margin-left: 2vw; */
     display: flex;
     flex-direction: column;
@@ -96,6 +102,27 @@ label {
     font-size: 1rem;
 }
 
-.model-selection-container div:nth-child(2) {
+.model-selection-container div:nth-child(2),
+.customer-name div:nth-child(2),
+.customer-contact div:nth-child(2){
     margin-left: 5vw;
+}
+
+.material-container, 
+.interface-container {
+    display: flex;
+    flex-direction: column;
+}
+.material-container div label, 
+.interface-container div label {
+    margin-left: 20px;
+    transition: color 0.5s ease-in-out;
+}
+
+.material-container div label:hover, 
+.material-container div input:hover, 
+.interface-container div label:hover,
+.interface-container div input:hover{
+    cursor: pointer;
+    color: var(--gold);
 }

@@ -129,23 +129,41 @@
     
                     <fieldset class="user-info-container">
                         <legend>Your Information</legend>
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName">
-    
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName">
+
+                        <div class="customer-name">
+                            <div>
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName">
+                            </div>
+
+                            <div>
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName">
+                            </div>
+                        </div>
                         
-                        <label for="email">Email</label>
-                        <input type="text" id="email">
+                        <div class="customer-contact">
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="text" id="email">
+                            </div>
+                            <div>
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone">
+                            </div>
+                        </div>
                         
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone">
+                        <div class="customer-query">
+                            <div>
+                                <label for="purchaseDate">Purchase Date</label>
+                                <input type="date" id="purchaseDate">
+                            </div>
                         
-                        <label for="purchaseDate">Purchase Date</label>
-                        <input type="text" id="purchaseDate">
-                        
-                        <label for="query">Query</label>
-                        <textarea name="query" id="query" cols="30" rows="10"></textarea>
+                            <div>
+                                <label for="query">Query</label>
+                                <textarea name="query" id="query" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
                     </fieldset>
     
                     <button type="submit">Submit</button>
