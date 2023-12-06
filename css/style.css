@@ -301,19 +301,4 @@ footer p {
     .welcome-message {
         font-size: 1em;
     }
-
-    /* footer {
-        position: fixed;
-        bottom: 0;
-        height: 2vh;
-    }
-
-    footer {
-        margin-top: 2vh;
-    }
-
-    footer p {
-        font-size: 0.8em;
-
-    } */
 }

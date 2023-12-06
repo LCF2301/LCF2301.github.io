@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="./css/contact.css">
 
         <!-- Google Fonts: Poppins -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,8 +43,115 @@
             </ul>
         </nav>
 
-        <main class="special-container" id="special">
+        <main class="contact-container" id="contact">
+            <div class="page-title-v1">
+                <h1 class="title contact-title">Have a Query?
+                    <span class="contact-subtitle vfry-title theme-yellow">we are here for you!</span>
+                </h1>
+            </div>
 
+            <div class="form-container">
+                <form action="">
+                    <fieldset class="product-info">
+                        <!-- <div class="product-container">
+                            <img id="product-viewer" src="./images/products/Oil-less.png" alt="Sample">
+                            <p class="title">AIR FRY</p>
+                        </div>
+                         -->
+                        <fieldset class="model-container">
+                            <legend>Choose the model</legend>
+                            <p class="form-description">Choose the model you have a query on.</p>
+                            <div class="model-selection-container">
+                               <div>
+                                    <label for="series">Series</label>
+                                    <select name="series" id="series">
+                                        <option value="AIRFRY">AIR FRY</option>
+                                        <option value="SMARTFRY">SMART FRY</option>
+                                        <option value="CRISPX">CrispX</option>
+                                        <option value="AIROVEN">AIR OVEN</option>
+                                        <option value="TURBOWAVE">TURBOWAVE</option>
+                                    </select>
+                               </div>
+        
+                                <div>
+                                    <label for="productType">Product Type</label>
+                                    <select name="product-type" id="productType">
+                                        <option value="Basket-Style">Basket-Style</option>
+                                        <option value="Oven-Style">Oven-Style</option>
+                                        <option value="Toaster-Oven">Toaster-Oven</option>
+                                        <option value="Hybrid">Hybrid</option>
+                                        <option value="Compact">Compact</option>
+                                    </select>    
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="material-container" id="vfry-material">
+                            <legend>Fryer Material</legend>
+                            <div>
+                                <input type="radio" name="material" id="glossy" checked>
+                                <label for="glossy">Glossy</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="material" id="matte">
+                                <label for="matte">Matte</label>
+                            </div>
+                        </fieldset>
+    
+                        <fieldset class="interface-container" id="vfry-interface">
+                            <legend>Interface Type</legend>
+
+                            <div>
+                                <input type="checkbox" name="interface" id="touch">
+                                <label for="touch">Touchscreen Interface</label>
+                            </div>
+    
+                            <div>
+                                <input type="checkbox" name="interface" id="analog">
+                                <label for="analog">Analog Control</label>
+                            </div>
+
+                            <div>   
+                                <input type="checkbox" name="interface" id="voice">
+                                <label for="voice">Voice Control Interface</label>
+                            </div>
+                        </fieldset>
+    
+                        <fieldset class="color-container" id="vfry-color">
+                            <legend>Color</legend>
+
+                            <button value="black">black</button>
+                            <button value="white">white</button>
+                            <button value="purple">purple</button>
+                            <button value="gold">gold</button>
+                        </fieldset>
+                    </fieldset>
+    
+                    <fieldset class="user-info-container">
+                        <legend>Your Information</legend>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName">
+    
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName">
+                        
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                        
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone">
+                        
+                        <label for="purchaseDate">Purchase Date</label>
+                        <input type="text" id="purchaseDate">
+                        
+                        <label for="query">Query</label>
+                        <textarea name="query" id="query" cols="30" rows="10"></textarea>
+                    </fieldset>
+    
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
         </main>
 
         <footer>
@@ -55,6 +163,6 @@
         </footer>
         
         <!-- Adding Scripts -->
-        <script src="./script/mobileMenu.js"></script>
+        <script src="./script/script.js"></script>
     </body>
 </html>
