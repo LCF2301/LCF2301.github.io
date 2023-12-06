@@ -23,7 +23,7 @@
 
 form {
     color: var(--silver-white);
-    width: 60%;
+    width: 40%;
 }
 
 .product-info {
@@ -187,4 +187,8 @@ input, textarea, select {
     transform: scale(0.9);
     color: red;
     border-color: red;
+}
+
+.required {
+    color: red;
 }
