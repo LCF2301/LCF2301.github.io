@@ -12,6 +12,10 @@ C#: C0877469
     font-family: var(--primary-font);
 }
 
+.prevent-scroll {
+    overflow: hidden;
+}
+
 html {
     font-size: 100%;
 }
