@@ -1,0 +1,6 @@
+.notfound-container {
+    text-align: center;
+    font-size: 10vw;
+    font-family: var(--logo-font);
+    color: var(--gold)
+}

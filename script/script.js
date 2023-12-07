@@ -26,12 +26,3 @@ function hamburger() {
         menuItems.classList.remove('desktop-tablet');
     }
 }
-
-
-/**
-* Validate Form & 
-* Change Fryer based on the contact form Query
-*/
-function handleFormChange() {
-
-}
