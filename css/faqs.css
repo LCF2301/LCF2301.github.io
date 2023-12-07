@@ -1,0 +1,27 @@
+/* ---------- Media Query for bigger screens ----------- */
+@media only screen and (min-width: 1990px) {}
+
+
+/* --------- Media Query for Tablets --------------- */
+@media only screen and (min-width: 761px) and (max-width: 1200px) {
+    .list-description {
+        font-size: 1rem;
+    }
+}
+
+/* --------- Media Query for large Mobiles --------------- */
+@media only screen and (min-width: 600px) and (max-width: 760px) {
+    .list-description {
+        font-size: 1rem;
+    }
+}
+
+/* --------- Media Query for Mobile Devices ---------------- */
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .list-title {
+        font-size: 1rem;
+    }
+    .list-description {
+        font-size: 0.8rem;
+    }
+}

@@ -119,6 +119,7 @@
 
   .full-page-information .description {
     font-size: 1rem;
+    word-spacing:-2px;
     text-align: justify;
   }
 

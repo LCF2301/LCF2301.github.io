@@ -1,5 +1,4 @@
 .vfryer-reasons-list {
-  height: 90vh;
   color: var(--silver-white);
   display: flex;
   flex-direction: column;
@@ -8,10 +7,15 @@
 
 .vfryer-reasons-list li {
   font-weight: bold;
+  padding: 1vw 0;
 }
 
 .vfryer-reasons-list li span {
   font-weight: normal;
+}
+
+.vfryer-reasons-list {
+  text-align: justify;
 }
 
 /* ---------- Media Query for bigger screens ----------- */
