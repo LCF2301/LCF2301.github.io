@@ -1,6 +1,6 @@
-/* ---------- Media Query for bigger screens ----------- */
-@media only screen and (min-width: 1990px) {}
-
+.questionContainer {
+    margin: 20px 0;
+}
 
 /* --------- Media Query for Tablets --------------- */
 @media only screen and (min-width: 761px) and (max-width: 1200px) {
