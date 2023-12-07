@@ -4,6 +4,11 @@
     --primary: #0E0E0E;
     --gold: #FF9900;
     --silver-white: #C6C6C6;
+    --light-grey: #636363;
+    --dark-grey: #000000;
+    --accept: rgb(9, 223, 9);
+    
+    
 
     /* THEMES - FONT */
     --primary-font: 'Poppins', sans-serif;
