@@ -1,19 +1,35 @@
-.about-vfryer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 70vh;
-    margin: 50px;
+.vfryer-reasons-list {
+  height: 90vh;
+  color: var(--silver-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-@keyframes slideInFromLeft {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 100%;
-    }
-  }
+
+.honeycomb {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vfryer-reasons-list li {
+  font-weight: bold;
+}
+
+.vfryer-reasons-list li span {
+  font-weight: normal;
+}
+
+/* ---------- Media Query for bigger screens ----------- */
+@media only screen and (min-width: 1200px) {
+  .vfryer-reasons-list li {
+    font-size: 1vw;
+  }  
+}

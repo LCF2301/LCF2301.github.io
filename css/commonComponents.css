@@ -1,0 +1,106 @@
+/* ------------- Common Component ------------- */
+.vfry-title {
+    font-family: var(--logo-font);
+    font-size: 3rem;
+  }
+  
+  .full-page-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .full-page-information .title {
+    /* font-size: 5rem; */
+    font-weight: 200;
+    color: var(--silver-white);
+    animation: 1s ease-in-out 0s 1 slideInFromLeft;
+  }
+  
+  .full-page-information .description {
+    width: 80vw;
+  }
+  
+
+/* ---------- Media Query for bigger screens ----------- */
+@media only screen and (min-width: 1200px) {
+    .vfry-title {
+      font-size: 4vw;
+    }
+  
+    .full-page-information .title {
+      font-size: 4vw;
+    }
+  }
+  
+  /* --------- Media Query for Tablets --------------- */
+  @media only screen and (min-width: 770px) and (max-width: 1200px) {
+    .vfry-title {
+      font-size: 6rem;
+    }
+    .full-page-information .title {
+      font-size: 4rem;
+    }
+    .full-page-information .description {
+      font-size: 1rem;
+    }
+    .full-page-information {
+      height: 100%;
+      margin-bottom: 100px;
+    }
+  }
+  
+  /* --------- Media Query for large Mobiles --------------- */
+  @media only screen and (min-width: 600px) and (max-width: 769px) {
+    
+    .full-page-information .title {
+      font-size: 4rem;
+    }
+    .vfry-title {
+      font-size: 6rem;
+    }
+    .full-page-information .description {
+      font-size: 1rem;
+    }
+    .full-page-information {
+      height: 100%;
+      margin-bottom: 100px;
+    }
+  }
+  
+  /* --------- Media Query for Mobile Devices ---------------- */
+  @media only screen and (min-width: 300px) and (max-width: 600px) {
+    
+    .vfry-title {
+      font-size: 3rem;
+    }
+    
+    .full-page-information .title {
+      font-size: 2rem;
+    }
+      
+    .full-page-information .description {
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    .full-page-information {
+      height: 100%;
+      margin: 10vh 0;
+    }
+  }
+  
+  /* -------- Animation ----------- */
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }

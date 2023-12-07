@@ -4,6 +4,7 @@ Name: Vaishakh Anil Kumar
 C#: C0877469
 */
 @import url('./theme.css');
+@import url('./commonComponents.css');
 
 * {
     padding:0;
@@ -12,19 +13,19 @@ C#: C0877469
     font-family: var(--primary-font);
 }
 
+html {
+    font-size: 16px;
+}
+
 .prevent-scroll {
     overflow: hidden;
 }
 
-html {
-    font-size: 100%;
-}
-
 body {
-    background-color: #111111;
+    background-color: var(--background);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 /* To set the footer to the bottom, body = flex */
@@ -32,27 +33,9 @@ main {
     flex: 1;
 }
 
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-    margin: 1.563vw;
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
     color: var(--silver-white);;
-}
-
-h1 {
-    color: var(--silver-white);;
-    text-align: center;
-    font-size: 1.042vw;
-    margin: 2vh;
-    font-weight: 200;
 }
 
 p {
@@ -62,9 +45,9 @@ p {
     font-size: 1.25vw;
 }
 
-/* COLOR THEMES */
+/*------- COLOR THEMES  ------- */
 .theme-yellow {
-    /* color: #FF9900; */
+    /* color: var(--gold); */
     color: var(--gold);
 }
 
@@ -72,7 +55,7 @@ p {
     color: var(--silver-white);
 }
 
-/* FONT SIZES */
+/* ------- FONT SIZES ------- */
 .large-font {
     font-size: 5vw;
 }
@@ -85,29 +68,17 @@ p {
     font-size: 1vw;
 }
 
-
-.landing-page {
-    height: 100vh;
+/* -------- Display -------- */
+.mobile {
+    display: none;
 }
 
-.vfry-title {
-    font-family: var(--logo-font);
+
+/*  -------  Navigation Styling  -------  */
+.hamburger-menu  {
+    display: none;
 }
 
-.title {
-    font-size: 5vw;
-    animation: 1s ease-in-out 0s 1 slideInFromLeft;
-}
-
-.company-logo {
-    width: 7.12vw;
-}
-
-.logo-container {
-    margin-left: 7.30vw;
-}
-
-/* Navigation Styling */
 nav {
     display: flex;
     justify-content: space-between;
@@ -123,12 +94,23 @@ nav {
     margin-right: 2.5vw;
 }
 
+
+.nav-container ul {
+    list-style: none;
+}
+
+.nav-container li {
+    margin: 1.563vw;
+    display: inline-block;
+    list-style-type: none;
+}
+
 .nav-container li a {
     font-size: 0.833vw;
 }
 
 .nav-container li .active {
-    color:#FF9900;
+    color: var(--gold);
 }
 
 .nav-container li .active::after {
@@ -136,7 +118,7 @@ nav {
     display: block;
     width: 100%;
     height: 0.104vw;
-    background-color: #FF9900;
+    background-color: var(--gold);
 }
 
 .nav-container li a::after {
@@ -144,7 +126,7 @@ nav {
     display: block;
     width: 0%;
     height: 0.104vw;
-    background-color: #FF9900;
+    background-color: var(--gold);
 }
 .nav-container li a:hover:after {
     width: 100%;
@@ -152,7 +134,7 @@ nav {
 }
 
 .nav-container li a:hover {
-    color: #FF9900;
+    color: var(--gold);
     transition: all 0.4s ease-in-out;
 }
 
@@ -162,8 +144,25 @@ header {
     align-items: center;
 }
 
-.mobile {
-    display: none;
+/*  ------- Landing Page Styles ------- */
+.landing-page {
+    height: 100vh;
+}
+
+.company-logo {
+    width: 7.12vw;
+}
+
+.logo-container {
+    margin-left: 7.30vw;
+}
+
+.welcome-message {
+  color: var(--silver-white);
+  text-align: center;
+  font-size: 1.042vw;
+  margin: 2vh;
+  font-weight: 200;
 }
 
 .company-banner-container {
@@ -178,7 +177,6 @@ header {
 footer {
     background-color: var(--primary);
     width: 100%;
-    /* height: 5.417vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,18 +186,6 @@ footer p {
     font-size: 0.8rem;
     padding: 2rem 0;
 }
-
-/* ------ Beginning of Footer Style ------- */
-
-.hamburger-menu  {
-    display: none;
-}
-
-/* Tablets & Large Phones - From 600px to 769px */
-@media only screen and (min-width: 600px) and (max-width: 769px) {
-    
-}
-
 
 /* Mobile & tablet View Ranging from 0 to (600px) 820px*/
 @media only screen and (max-width: 1200px) {
