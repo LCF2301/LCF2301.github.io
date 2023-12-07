@@ -93,4 +93,11 @@
         font-size: 1.25rem;
     }
 
+    .video-card {
+        height: auto;
+    }
+
+    .video-gallery-content {
+        height: auto;
+    }
 }

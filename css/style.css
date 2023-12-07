@@ -7,9 +7,9 @@ C#: C0877469
 @import url('./commonComponents.css');
 
 * {
-    padding:0;
-    margin:0;
-    border:0;
+    padding: 0;
+    margin: 0;
+    border: 0;
     font-family: var(--primary-font);
 }
 
@@ -29,6 +29,20 @@ body {
     flex-direction: column;
 }
 
+/* ----- Styling the scrollbar ------ */
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--gold);
+    outline: 0.5px solid var(--gold);
+}
+
 /* To set the footer to the bottom, body = flex */
 main {
     flex: 1;
@@ -36,11 +50,13 @@ main {
 
 a {
     text-decoration: none;
-    color: var(--silver-white);;
+    color: var(--silver-white);
+    ;
 }
 
 p {
-    color: var(--silver-white);;
+    color: var(--silver-white);
+    ;
     text-align: center;
     font-weight: 100;
     font-size: 1.25vw;
@@ -76,7 +92,7 @@ p {
 
 
 /*  -------  Navigation Styling  -------  */
-.hamburger-menu  {
+.hamburger-menu {
     display: none;
 }
 
@@ -129,6 +145,7 @@ nav {
     height: 0.104vw;
     background-color: var(--gold);
 }
+
 .nav-container li a:hover:after {
     width: 100%;
     transition: width 0.4s ease-in-out;
@@ -159,11 +176,11 @@ header {
 }
 
 .welcome-message {
-  color: var(--silver-white);
-  text-align: center;
-  font-size: 1.042vw;
-  margin: 2vh;
-  font-weight: 200;
+    color: var(--silver-white);
+    text-align: center;
+    font-size: 1.042vw;
+    margin: 2vh;
+    font-weight: 200;
 }
 
 .company-banner-container {
@@ -204,16 +221,18 @@ footer p {
         cursor: pointer;
     }
 
-    .hamburger-menu:hover .line-top, 
+    .hamburger-menu:hover .line-top,
     .hamburger-menu:hover .line-bottom {
         background-color: var(--gold);
     }
 
     .hamburger-menu:hover .line-center {
         background-color: var(--silver-white);
-    } 
+    }
 
-    .hamburger-menu .line-top, .hamburger-menu .line-center, .hamburger-menu .line-bottom {
+    .hamburger-menu .line-top,
+    .hamburger-menu .line-center,
+    .hamburger-menu .line-bottom {
         width: 100%;
         height: 2px;
         margin: 5px 0;
@@ -226,25 +245,25 @@ footer p {
         border: 1px solid var(--silver-white);
         transition-delay: 0.15s;
     }
-    
+
     .hamburger-menu .line-bottom {
         transition-delay: 0.25s;
     }
 
     .close-button div:nth-child(1) {
-        transform: translateY(10px) rotate(45deg) ;
+        transform: translateY(10px) rotate(45deg);
     }
 
     .close-button div:nth-child(2) {
         opacity: 0;
     }
-    
+
     .close-button div:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg) ;
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     /* ----- End of Hamburger Menu ----- */
-    
+
 
     /* ------- Beginning of Navigation menu items ----- */
     .mobile-menu-options {
@@ -252,7 +271,7 @@ footer p {
         width: 100vw;
         height: 100vh;
         background-color: var(--primary);
-        top:0;
+        top: 0;
 
         display: flex;
         justify-content: center;
@@ -260,14 +279,14 @@ footer p {
         flex-direction: column;
     }
 
-    .mobile-menu-options li a{
+    .mobile-menu-options li a {
         font-size: 4vh;
     }
 
     .mobile-menu-options li {
         margin: 1vh 0;
     }
-    
+
     /* ------- End of Navigation menu items ----- */
 
     .mobile {

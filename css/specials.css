@@ -169,6 +169,15 @@
         width: 90%;
         text-align: justify;
     }
+
+    .specials-heading-container {
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .specials-heading  {
+        font-size: 2rem;
+    }
 }
 
 /* --------- Media Query for large Mobiles --------------- */
@@ -201,6 +210,15 @@
         width: 90%;
         text-align: justify;
     }
+
+    .specials-heading-container {
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .specials-heading  {
+        font-size: 1.25rem;
+    }
 }
 
 /* --------- Media Query for Mobile Devices ---------------- */
@@ -231,5 +249,14 @@
         font-size: 4vw;
         width: 90%;
         text-align: justify;
+    }
+
+    .specials-heading-container {
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .specials-heading  {
+        font-size: 1.25rem;
     }
 }
