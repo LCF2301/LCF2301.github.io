@@ -8,6 +8,23 @@
 @import url(theme.css);
 
 
+.contact-info-container {
+    text-align: center;
+}
+
+.title {
+    margin-top: 5vh;
+    font-size: 4vw;
+    color: var(--silver-white);
+}
+
+.contact-info-container .subtitle {
+    font-size: 2vw;
+    margin-left: 12vw;
+    line-height: 1;
+}
+
+
 /* Contact Page styling */
 .page-title-v1 .contact-title {
     display: flex;
@@ -44,7 +61,7 @@ form {
 
 }
 
-.product-container img{
+.product-container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -70,11 +87,14 @@ label {
     font-size: 1.25rem;
 }
 
-select:hover, input[type="date"]:hover {
+select:hover,
+input[type="date"]:hover {
     cursor: pointer;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     background-color: rgba(41, 41, 41, 0.9);
     color: var(--silver-white);
     padding: 10px 10px;
@@ -90,8 +110,7 @@ input, textarea, select {
 
 .model-selection-container,
 .customer-name,
-.customer-contact
-{
+.customer-contact {
     display: flex;
     margin: 20px 0;
 }
@@ -99,8 +118,7 @@ input, textarea, select {
 
 .model-selection-container div select,
 .customer-name div input,
-.customer-contact div input
-{
+.customer-contact div input {
     /* margin-left: 2vw; */
     display: flex;
     flex-direction: column;
@@ -110,32 +128,32 @@ input, textarea, select {
 
 .model-selection-container div:nth-child(2),
 .customer-name div:nth-child(2),
-.customer-contact div:nth-child(2)
-{
+.customer-contact div:nth-child(2) {
     margin-left: 5vw;
 }
 
-.material-container, 
+.material-container,
 .interface-container {
     display: flex;
     flex-direction: column;
 }
-.material-container div label, 
+
+.material-container div label,
 .interface-container div label {
     margin-left: 20px;
     transition: color 0.5s ease-in-out;
 }
 
-.material-container div label:hover, 
-.material-container div input:hover, 
+.material-container div label:hover,
+.material-container div input:hover,
 .interface-container div label:hover,
-.interface-container div input:hover{
+.interface-container div input:hover {
     cursor: pointer;
     color: var(--gold);
 }
 
 .date-container,
-.query-container{
+.query-container {
     display: flex;
     flex-direction: column;
 }
@@ -156,7 +174,7 @@ input, textarea, select {
 .submit-button {
     width: 200px;
     padding: 15px;
-    
+
     background-color: rgba(41, 41, 41, 0.9);
     border: 2px solid var(--gold);
     color: var(--gold);
@@ -191,4 +209,79 @@ input, textarea, select {
 
 .required {
     color: red;
+}
+
+
+
+/* --------- Media Query for Tablets --------------- */
+@media only screen and (min-width: 761px) and (max-width: 1200px) {
+    form {
+        width: 80%;
+    }
+    .contact-info-container .title {
+        font-size: 3.5rem;
+    }
+
+    .contact-info-container .subtitle {
+        font-size: 3rem;
+    }
+}
+
+/* --------- Media Query for large Mobiles --------------- */
+@media only screen and (min-width: 600px) and (max-width: 760px) {
+    form {
+        width: 80%;
+    }
+    .contact-info-container .title {
+        font-size: 2.5rem;
+    }
+
+    .contact-info-container .subtitle {
+        font-size: 2rem;
+    }
+}
+
+/* --------- Media Query for Mobile Devices ---------------- */
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    form {
+        width: 90%;
+        /* border: 2px solid red; */
+    }
+    .customer-name, .customer-contact {
+        flex-direction: column;
+    }
+
+    .customer-name div:nth-child(2),
+    .customer-contact div:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .submit-button,.reset-button {
+        width: 100%;
+        margin-bottom: 2vh;
+        margin-left: 0;
+    }
+    
+    .user-info-container {
+        width: 85vw;
+    }
+
+    .customer-name input,
+    .customer-contact input,
+    .customer-query input, 
+    .customer-query textarea{
+        width: 100%;
+    }
+
+    .contact-info-container {
+        margin-bottom: 2rem;
+    }
+
+    .contact-info-container .title {
+        font-size: 2.5rem;
+    }
+
+    .contact-info-container .subtitle {
+        font-size: 2rem;
+    }
 }
