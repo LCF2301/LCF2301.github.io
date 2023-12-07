@@ -6,6 +6,8 @@
 @media only screen and (min-width: 761px) and (max-width: 1200px) {
     .list-description {
         font-size: 1rem;
+        padding-top: 10px;
+        text-align: justify;
     }
 }
 
@@ -13,6 +15,8 @@
 @media only screen and (min-width: 600px) and (max-width: 760px) {
     .list-description {
         font-size: 1rem;
+        padding-top: 10px;
+        text-align: justify;
     }
 }
 
@@ -23,5 +27,7 @@
     }
     .list-description {
         font-size: 0.8rem;
+        padding-top: 10px;
+        text-align: justify;
     }
 }
