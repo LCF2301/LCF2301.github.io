@@ -108,4 +108,7 @@ tr:hover td a {
             width: 90vw;
             overflow-x: auto;
         }
+        .table-container table {
+            font-size: 0.5rem;
+        }
 }
